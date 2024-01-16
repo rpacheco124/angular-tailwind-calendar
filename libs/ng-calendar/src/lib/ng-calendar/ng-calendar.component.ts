@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CalendarHeaderComponent } from './calendar-header/calendar-header.component';
 
 @Component({
   selector: 'angular-tailwind-calendar-ng-calendar',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './ng-calendar.component.html',
-  styleUrl: './ng-calendar.component.css',
+  imports: [CalendarHeaderComponent],
+  host: {
+    class: 'lg:min-h-96'
+  },
+  template: `
+    <div class="lg:flex lg:flex-col lg:h-full">
+      <calendar-header></calendar-header>
+    </div>
+  `
 })
 export class NgCalendarComponent {}
