@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CalendarHeaderComponent } from './calendar-header/calendar-header.component';
 
 @Component({
-  selector: 'angular-tailwind-calendar-ng-calendar',
+  selector: 'ng-angular-tailwind-calendar-ng-calendar',
   standalone: true,
   imports: [CalendarHeaderComponent],
   host: {
@@ -10,7 +10,7 @@ import { CalendarHeaderComponent } from './calendar-header/calendar-header.compo
   },
   template: `
     <div class="lg:flex lg:flex-col lg:h-full">
-      <calendar-header></calendar-header>
+      <ng-calendar-header></ng-calendar-header>
     </div>
   `
 })

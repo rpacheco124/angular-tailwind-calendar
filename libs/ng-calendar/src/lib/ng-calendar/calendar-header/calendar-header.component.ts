@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'calendar-header',
+  selector: 'ng-calendar-header',
   standalone: true,
   imports: [],
   template: `
