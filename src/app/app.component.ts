@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { NgCalendarComponent } from '@angular-tailwind-calendar/ng-calendar';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   standalone: true,
@@ -10,6 +11,12 @@ import { NgCalendarComponent } from '@angular-tailwind-calendar/ng-calendar';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'angular-tailwind-calendar';
+
+  
+  ngOnInit(): void {
+    initFlowbite();
+  }
+
 }
